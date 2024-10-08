@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taidot</title>
+    <meta name="description" content="Tämä on Saana Silvennoisen CV:n taidot-sivu">
+    <meta name="author" content="Saana Silvennoinen">
+    <link href="tyyli.css" rel="stylesheet">
+    <style>
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+            
+            h1 {
+                font-size: 30pt;
+            text-align: center;
+            }
+            h4 {
+                font-size: 16pt;
+                text-align: center;
+            }
+            h3{
+                text-decoration: underline; /* Alleviivaus */
+text-decoration-color: rgb(0, 0, 0); /* Alleviivauksen väri */
+text-decoration-thickness: 2px; /* Alleviivauksen paksuus */
+            }
+            .keskelle {
+                display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        } 
+        .container {
+            display: flex;
+            flex-direction: column; /*mobile firs*/
+            align-items: center;
+            margin-top: 20px;
+            
+        }
+        .flex-container {
+            display: flex;
+            justify-content: space-around; /* Asettaa elementit vierekkäin */
+            width: 100%;
+        }
+        .flex-item {
+            display: flex;
+            flex-direction: column; /* Asettaa otsikon ja listan päällekkäin */
+            align-items: center;
+        }
+        .centered-list {
+            display: flex;
+            justify-content: center; /* Keskittää listan vaakasuunnassa */
+        }
+        ul {
+            list-style-position: inside; /* Asettaa pallot listan sisäpuolelle */
+            padding: 0;
+           
+        }
+        ul li {
+            text-align: left; /* Asettaa tekstin vasemmalle */
+        }
+ .box {
+            width: 80%; /*mobile firs leveys suhteessa näytön leveyteen*/
+            max-width: 300px;
+            height: 80px;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #000000;
+            margin: 10px 0;
+            border-radius: 15px; /* Pyöreät reunat */
+            background-size: cover; /* Kuva täyttää laatikon */
+            background-position: center; /* Kuva keskitetään laatikkoon */
+            overflow: hidden; /* Piilottaa ylimenevät osat */
+        
+        }
+        .box1 {
+            background-color:#bfe2ea ;
+        }
+        .box1 a {
+            text-decoration: none;
+            color: #000;
+            font-size: 20px;
+            
+         }
+         .box2{
+            background-color: #d4bbddc9;
+            border-radius: 15px; /* Pyöreät reunat */
+         }
+         .box3{
+            background-color:#fdd1d2c1 ;
+            border-radius: 15px; /* Pyöreät reunat */
+         }
+         .box4{
+            background-color: #fbede0c0;
+            border-radius: 15px; /* Pyöreät reunat */
+         }
+         @media (min-width: 768px) {
+        .flex-container {
+            flex-direction: row;
+            justify-content: space-around;
+        }     .box {
+            width: 45%;
+            max-width: 300px;
+        }
+    }
+    @media (min-width: 1024px) {
+        .flex-container {
+            justify-content: space-between;
+        }
+        .box {
+            width: 30%;
+            max-width: 300px;
+        }
+    }
+         
+
+    </style>
+</head>
+<body>
+    <h1>Taidot</h1>
+    <div class="flex-container">
+        <img src="pliiploo.png" alt="aikajanakaavio, missä lukee 2013 ylioppilas, 2015 kosmetologin tutkinto, 2015-2023 kauneudenhoitoalan yrittäjä ja 2024 it-tradenomiopiskelija."> <br>
+    </div>
+    
+   
+
+    
+    
+    <div class="flex-container">
+        
+               
+
+            <div class="centered-list">
+                <div class="flex-item">
+                    <div class="box2">
+                    <h3>Vahvuudet</h3> 
+                    <ul>
+                        <li>Kuuntelu- ja keskustelutaidot</li>
+                        <li>Sopeutuvaisuus</li>
+                        <li>Toimeliaisuus</li>
+                        <li>Käytännönläheisyys</li>
+                        <li>Luovuus</li>
+                        <li>Empatiakyky</li>
+                        <li>Kekseliäisyys</li>
+                        <li>Itsenäinen työskentely</li>
+                      </ul>
+                      </div>
+                    </div>
+            </div>
+                   
+           
+                
+                <div class="centered-list">
+                <div class="flex-item">
+                    <div class="box3">
+                    <h3>Kielet</h3> 
+                      <ul>
+                        <li>Suomi – äidinkieli</li>
+                        <li>Englanti – hyvä</li>
+                        <li>Ruotsi – heikko</li>
+                        <li>Saksa – heikko</li>
+                      </ul>
+                    </div>
+                </div>
+                </div>
+    </div>
+          
+            <div class="box4">
+                
+                <h3>Taidot</h3>
+                
+                    <h4>Kosmetologin ammattitutkinto:</h4>
+        <p>kosmetologin työtehtävät, valmiudet yrittäjyyteen, asiakaspalvelutaidot.</p>
+        <h4>Kauneudenhoitoalan yrittäjyys:</h4>
+       <p> Ajanhallinta, pitkäjänteisyys, asiakaspalvelu, tiimityötaidot, keskustelu- ja kuuntelutaidot, tarkkuus, yrittäjäelämän ymmärrys, luova työskentely.</p>
+       <h4>It-alan opiskelu:</h4>
+        <p>ICT-valmiudet, digitaalisten palvelujen johdanto, ohjelmistokehityksen johdanto, html. sivuston suunnittelu, ICT-infrastruktuurin ja pilvipalveluiden johdanto, Liiketoiminta lähtöisen ICT:n johdanto</p>
+        
+                
+            </div>
+            
+
+
+    <footer>
+        <br>
+            <br>
+            Ota yhteyttä: <br>
+            ssaana.silvennoinen@gmail.com<br>
+            0503381686
+        <div class="container">
+        <div class="box box1">
+            <a href="index.html">Takaisin etusivulle</a>
+        </div>
+    
+    </div>
+
+    </footer>
+</body>
+</html>

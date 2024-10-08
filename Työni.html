@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Työni</title>
+    <meta name="description" content="Tämä on Saana Silvennoisen portfolion  työnäytteet">
+    <meta name="author" content="Saana Silvennoinen">
+    <link href="tyyli.css" rel="stylesheet">
+    <style>
+            h1 {
+                font-size: 30pt;
+            text-align: center;
+        }
+         .container {
+            display: flex;
+            flex-direction: column; /*mobile firs*/
+            align-items: center;
+            margin-top: 20px;
+            
+        }
+ .box {
+            width: 80%; /*mobile firs leveys suhteessa näytön leveyteen*/
+            max-width: 300px;
+            height: 80px;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #000000;
+            margin: 10px 0;
+            border-radius: 15px; /* Pyöreät reunat */
+            background-size: cover; /* Kuva täyttää laatikon */
+            background-position: center; /* Kuva keskitetään laatikkoon */
+            overflow: hidden; /* Piilottaa ylimenevät osat */
+        
+        }
+        .box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Skaalaa kuvan täyttämään laatikon */
+        }
+        .box1 {
+            background-color:#bfe2ea ;
+        }
+        .box2 {
+            background-color: #FDD1D2;
+            
+            
+        }
+        .box3 {
+            background-color: #FBEDE0;
+            
+        }
+        .box1 a {
+            text-decoration: none;
+            color: #000;
+            font-size: 20px;
+            
+         }
+        .box2 a, .box3 a {
+            text-decoration: none;
+            color: #000;
+            font-size: 20px;
+            position: relative;
+            z-index: 1;
+            background-color: rgba(255, 255, 255, 0.71); /* Korostusväri */
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+    <header>
+    <h1>Työni</h1>
+    </header>
+    <div class="container">
+        <div class="box box2">
+            <a href="Työ1sähkö.html">Sähkötarjouslaskuri</a>
+    </div>
+    <div class="box box3">
+        <a href="Arvosanaohjelma.html">Arvosanaohjelma</a>
+    </div>
+    </div>
+ 
+
+     
+
+    </main>
+    <footer>
+        <br>
+            <br>
+            Ota yhteyttä: <br>
+            ssaana.silvennoinen@gmail.com<br>
+            0503381686
+        <div class="container">
+        <div class="box box1">
+            <a href="index.html">Takaisin etusivulle</a>
+        </div>
+           
+        </div>
+    
+   
+
+    </footer>
+</body>
+</html>
