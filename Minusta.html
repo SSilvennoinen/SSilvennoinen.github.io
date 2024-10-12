@@ -8,6 +8,12 @@
     <title>Minusta</title>
     <link href="tyyli.css" rel="stylesheet">
     <style>
+                .box-shadow {
+            box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.5);
+        }
+        .inner-glow {
+            box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5);
+        }
 
             h1 {
                 font-size: 30pt;
@@ -18,6 +24,7 @@
             background-color: #fbede097; /* Korostusväri */
             padding: 5px;
             border-radius: 5px;
+            padding: 30px;
         }
         .keskelle img {
             max-width: 100%; /* Skaalautuu mobiililaitteille */
@@ -55,17 +62,15 @@
             color: #000000;
             margin: 10px 0;
             border-radius: 15px; /* Pyöreät reunat */
+            padding: 20px;
         
         }
-        .box1 {
+        .nappula1 {
             background-color: #bfe2ea;
         }
-        .box a {
-            text-decoration: none;
-            color: #000;
-            font-size: 20px;
+   
             
-        }
+        
         .keskelle {
             display: flex;
             flex-direction: column;
@@ -80,7 +85,7 @@
     <main>
         <header>
             <figure class="keskelle">
-                <img src="omakuva.jpg" alt="cv-kuva">
+                <img src="omakuva.jpg" alt="cv-kuva" class="box-shadow">
                 <h1>Minusta</h1>
             </figure>
 
@@ -88,7 +93,7 @@
         </header>
         <figure class="keskelle">
         <h2>Kuka minä olen? <br> </h2>
-    <p>30-vuotias tuleva it-alan ammattilainen. Opiskelen tällä hetkellä ensimmäistä vuotta Haaga-Helian Pasilan kampuksella. Ennen Haaga-Heliassa opiskelua toimin 8 vuoden ajan kauneudenhoitoalan yrittäjänä. Asun Hyvinkäällä puolisoni ja kahden kissani kanssa. Vapaa-ajallani harrastan luonnossa liikkumista, valokuvausta, maalaamista ja muuta käsillä näpertämistä.</p>
+    <p>30-vuotias tuleva it-alan ammattilainen. Opiskelen tällä hetkellä ensimmäistä vuotta Haaga-Helian Pasilan kampuksella. Ennen Haaga-Heliassa opiskelua olen toiminut 8 vuoden ajan kauneudenhoitoalan yrittäjänä. Asun Hyvinkäällä puolisoni ja kahden kissani kanssa. Vapaa-ajallani harrastan luonnossa liikkumista, valokuvausta, maalaamista ja muuta käsillä näpertämistä.</p>
     <h2>Miksi palkata minut?</h2>  
     <p>Tarvitsetko idearikasta ja ahkeraa työntekijää? Tässä sinulle sellainen! Yrittäjävuosien jälkeen valmis uuteen suuntaan työelämässä it-alalla. Ala on minulle vielä täysin uusi, mutta olen aina valmis oppimaan uutta. Yrittäjävuoteni opettivat minulle pitkäjänteisyyttä, ajanhallintaa ja tarkkuutta. Hoitolatyössä ihmisten parissa työskennellessä ovat karttuneet myös keskustelutaidot, empatiakyky ja tiimityötaidot. Luonteeni käytännönläheisyys ja luovuus ovat erilaisissa työtehtävissä toimiva yhdistelmä. Miksei siis sovittaisi haastattelua jo tänään? </p>
 </figure> 
@@ -101,9 +106,9 @@
             ssaana.silvennoinen@gmail.com<br>
             0503381686
     <div class="container">
-    <div class="box box1">
-        <a href="index.html">Takaisin etusivulle</a>
-    </div>
+        <button class="nappula nappula1" onclick="location.href='index.html'">Takaisin etusivulle
+
+        </button>
 
 </div>
 
