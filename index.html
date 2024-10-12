@@ -11,7 +11,7 @@
         <link href="tyyli.css" rel="stylesheet">
         <style>
       
-        .keskelle {
+      .keskelle {
             display: block;
             margin-left: auto;
             margin-right: auto;
@@ -23,7 +23,21 @@
             margin-top: 20px;
             
         }
-        .box {
+    
+        
+        .nappula1 {
+            background-color: #D4BBDD ;
+        }
+        .nappula2 {
+            background-color: #FDD1D2;
+        }
+        .nappula3 {
+            background-color: #FBEDE0;
+        }
+        
+
+        
+        .nappula {
             width: 80%; /*mobile firs leveys suhteessa näytön leveyteen*/
             max-width: 300px;
             height: 80px;
@@ -34,24 +48,8 @@
             text-align: center;
             color: #000000;
             margin: 10px 0;
-            border-radius: 15px; /* Pyöreät reunat */
-            
-        }
-        .box1 {
-            background-color: #D4BBDD ;
-        }
-        .box2 {
-            background-color: #FDD1D2;
-        }
-        .box3 {
-            background-color: #FBEDE0;
-        }
-        
-        
-        .box a {
-            text-decoration: none;
-            color: #000;
-            font-size: 20px;
+            border-radius: 15px;
+
         }
          /* Media query suuremmille näytöille */
          @media (min-width: 768px) {
@@ -59,43 +57,49 @@
                 flex-direction: row;
                 justify-content: space-around;
             }
-            .box {
+            .nappula {
                 width: 200px; /* Pöytäkone: kiinteä leveys */
                 height: 100px; /* Pöytäkone: kiinteä korkeus */
                 margin: 0 10px; /* Marginaali laatikoiden väliin */ 
             }
         }
-        </style>
 
-    </head>
-    <body>
-        <main>
-            <header>
-                   <figure class="keskelle">
-                    <img src= "kuvaetusivulle3.jpg" alt= "etusivun kuva">                     
-                </figure>
-                <h1> Saana Silvennoinen </h1>
-             </header>
-         </main>
-         <div class="container">
-            <div class="box box1">
-                <a href="Minusta.html">Minusta</a>
-            </div>
-            <div class="box box2">
-                <a href="Työni.html">Työni</a>
-            </div>
-            <div class="box box3">
-                <a href="Taidot.html">Taidot</a>
-            </div>
-        </div>  
-        <footer>
-            <br>
-            <br>
-            Ota yhteyttä: <br>
-            ssaana.silvennoinen@gmail.com<br>
-            0503381686
-        </footer>
-     </body>
+    </style>
+</head>
+<body>
+<div>
+    <main>
+        <header>
+               <figure class="keskelle">
+                <img src= "kuvaetusivulle3.jpg" alt= "etusivun kuva">                     
+            </figure>
+            <h1> Saana Silvennoinen </h1>
+         </header>
+     </main>
+     <div class="container">
+       
+        <button class="nappula nappula1" onclick="location.href='Minusta.html'">Minusta
+    
+        </button>
+        
+     
+        
+        <button class="nappula nappula2" onclick="location.href='Työni.html'">Työni
 
+        </button>
+        <button class="nappula nappula3" onclick="location.href='Taidot.html'">Taidot
 
+        </button>
+    </div> 
+</div>
+    <footer>
+        <br>
+        <br>
+        Ota yhteyttä: <br>
+        ssaana.silvennoinen@gmail.com<br>
+        0503381686
+    </footer>
+
+    
+</body>
 </html>
