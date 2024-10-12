@@ -10,14 +10,13 @@ body {color:rgb(0, 0, 0); /*tekstin väri*/
     background-image: url("taustakuvaksijpg.jpg");
     background-size: cover; /* kuvan skaalaus */
     background-position: center; /* kuvan sijainti */
+    background-repeat: no-repeat;
 }
 
 h1 {font-size: 30pt;
 font-family:"Raleway", sans-serif;
 text-align: center;
-text-decoration: underline; /* Alleviivaus */
-text-decoration-color: rgb(0, 0, 0); /* Alleviivauksen väri */
-text-decoration-thickness: 2px; /* Alleviivauksen paksuus */
+
 }
 h2 {font-family: "Raleway",sans-serif;
 font-size: 22pt;
@@ -57,4 +56,21 @@ footer{
     h1 {
         text-align: center; /* Tekstin tasaus vasemmalle */
     }
+}
+.nappula {font-family:"Open Sans", system-ui;
+   
+    color: rgb(0, 0, 0); /* Valkoinen teksti */
+    padding: 35px 60px; /* Sisäiset marginaalit */
+    text-align: center; /* Tekstin keskitys */
+    text-decoration: none; /* Ei alleviivausta */
+    display: inline-block; /* Inline-block asettelu */
+    font-size: 18px; /* Fonttikoko */
+    margin: 4px 2px; /* Ulkoiset marginaalit */
+    cursor: pointer; /* Kursorin tyyli */
+    border: none; /* Ei reunusta */
+    border-radius: 15px; /* Pyöristetyt kulmat */
+}
+
+.nappula:hover {
+    background-color: #ffffff7b; /* Tummempi vihreä hover-efekti */
 }
