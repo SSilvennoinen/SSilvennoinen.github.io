@@ -19,7 +19,21 @@
             margin-top: 20px;
             
         }
- .box {
+
+   
+        .nappula1 {
+            background-color:#bfe2ea ;
+        }
+        .nappula2 {
+            background-color: #FDD1D2;
+            
+            
+        }
+        .nappula3 {
+            background-color: #FBEDE0;
+            
+        }
+        .nappula {
             width: 80%; /*mobile firs leveys suhteessa näytön leveyteen*/
             max-width: 300px;
             height: 80px;
@@ -30,45 +44,21 @@
             text-align: center;
             color: #000000;
             margin: 10px 0;
-            border-radius: 15px; /* Pyöreät reunat */
-            background-size: cover; /* Kuva täyttää laatikon */
-            background-position: center; /* Kuva keskitetään laatikkoon */
-            overflow: hidden; /* Piilottaa ylimenevät osat */
-        
+            border-radius: 15px;
+
         }
-        .box img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Skaalaa kuvan täyttämään laatikon */
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row; /* Pöytäkone: vierekkäin */
+                justify-content: center;
+            }
+            .nappula {
+                width: 30%; /* Pöytäkone: leveys suhteessa näytön leveyteen */
+                max-width: none; /* Poistaa mobiilin max-leveyden */
+                margin: 10px;
+            }
         }
-        .box1 {
-            background-color:#bfe2ea ;
-        }
-        .box2 {
-            background-color: #FDD1D2;
-            
-            
-        }
-        .box3 {
-            background-color: #FBEDE0;
-            
-        }
-        .box1 a {
-            text-decoration: none;
-            color: #000;
-            font-size: 20px;
-            
-         }
-        .box2 a, .box3 a {
-            text-decoration: none;
-            color: #000;
-            font-size: 20px;
-            position: relative;
-            z-index: 1;
-            background-color: rgba(255, 255, 255, 0.71); /* Korostusväri */
-            padding: 5px;
-            border-radius: 5px;
-        }
+       
 
     </style>
 </head>
@@ -78,12 +68,12 @@
     <h1>Työni</h1>
     </header>
     <div class="container">
-        <div class="box box2">
-            <a href="Työ1sähkö.html">Sähkötarjouslaskuri</a>
-    </div>
-    <div class="box box3">
-        <a href="Arvosanaohjelma.html">Arvosanaohjelma</a>
-    </div>
+        <button class="nappula nappula2" onclick="location.href='Työ1sähkö.html'">Sähkötarjouslaskuri
+
+        </button>
+        <button class="nappula nappula3" onclick="location.href='Arvosanaohjelma.html'">Arvosanaohjelma
+
+        </button>
     </div>
  
 
@@ -97,9 +87,9 @@
             ssaana.silvennoinen@gmail.com<br>
             0503381686
         <div class="container">
-        <div class="box box1">
-            <a href="index.html">Takaisin etusivulle</a>
-        </div>
+            <button class="nappula nappula1" onclick="location.href='index.html'">Takaisin etusivulle
+
+            </button>
            
         </div>
     
